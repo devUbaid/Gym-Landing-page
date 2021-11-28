@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Power Fitness</title>
+
+</head>
+<link rel="stylesheet" href="css/style.css ">
+<style>
+    /* CSS Reset */
+    body {
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url('img/bg.jpg');
+        position: absolute;
+        /* top: 0;
+        left: 0;
+        z-index: -1; */
+        /* display: flex; */
+        /* opacity: 0.3; */
+    }
+    .left{
+        position: absolute;
+        left: 43px;
+        top: 20px;
+        display: inline-block;
+        /* border: 2px solid red; */
+    }
+    .left img{
+        width: 136px;
+        filter: invert(100%);
+        
+    }
+    .left div{
+        line-height: 15px;
+        font-size: 20px;
+        text-align: center;
+    }
+    .mid{
+        display: block;
+        width: 55%;
+        margin: 29px 335px;
+        /* right: -110px; */
+        /* padding: auto 100px; */
+        /* border: 2px solid yellow; */
+    }
+    .right{
+        position: absolute;
+        right: -147px;
+        top: 22px;
+        padding: 5px 5px;
+        display: inline-block;
+        /* color: rgb(246, 41, 69); */
+        /* border: 2px solid white; */
+    }
+
+    .navbar{
+        /* display: inline-block; */
+        text-align: center;
+    }
+    .navbar li{
+        display: inline-block;
+        /* font-size: 20px; */
+    }
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 18px 10px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 22px;
+    }
+    .navbar li a:hover,
+    .navbar li a.active{
+        text-decoration: underline;
+        color: rgb(245, 56, 9);
+
+    }
+    .btn {
+        font-family: 'Bree Serif', serif;
+        /* font-family: 'Kaushan Script', cursive; */
+        margin: 0px 9px;
+        background-color: rgba(240, 12, 12, 0.972);
+        color: white;
+        padding: 4px 12px;
+        /* border: 2px solid rgb(195, 25, 25); */
+        border-radius: 10px;
+        font-size: 15px;
+        cursor: pointer;
+    }
+    .btn:hover {
+        background-color: rgb(197, 38, 38);
+    }
+    .container {
+        /* border: 2px solid white; */
+        margin: 53px 150px;
+        padding: 90px auto;
+        width: 43%;
+        border-radius: 28px;
+        font-size: 20px;
+        /* right: 60px; */
+        text-align: left;
+        padding-top: 3px;
+    }
+    .form-group input[type=text] {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        text-align: center;
+        display: block;
+        width: 225px;
+        /* padding: 10px; */
+        border: 3px solid rgb(235, 230, 230);
+        margin: 4px 33px;
+        font-size: 13.5px;
+        border-radius: 6px;
+        box-shadow: 0 0 12px 8px rgba(0, 0, 0, 0.103);
+        background-color: #036c95;
+    }
+    .form-group input::placeholder{
+        color: white;
+    }
+    
+    
+    .container h1 {
+        text-align: left;
+        /* background-color: rgb(38, 38, 235); */
+        /* display: block; */
+        color: rgb(255, 202, 29);
+        border-radius: 4px;
+    }
+    
+    .container button {
+        display: block;
+        width: 60%;
+        margin: 20px 9px;
+        background-color: rgb(235, 0, 31);
+        text-align: center;
+    }
+
+</style>
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="img/gym.png" alt="">
+            <div>Power Fitness</div>
+        </div>
+        <!-- mid box for navbar  -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Notification</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </div>
+        <!-- right box for buttons -->
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+
+        </div>
+        
+    </header>
+    <div class="container">
+        <h1>INCREASE YOUR 
+            MUSCLE POWER</h1>
+            <h5>Are You Ready To Get Fit, Strong & Motivated! Join Now</h5>
+            <form action="noaction.php">
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter your Name">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter your Age">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter your Gender">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter your Locality">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter your Email Id">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter your Phone Number">
+                </div>
+                <button class="btn">SUBMIT NOW</button>
+            </form>
+        </div>
+        
+    </body>
+    
+</html>
